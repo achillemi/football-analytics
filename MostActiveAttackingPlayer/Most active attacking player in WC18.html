@@ -13972,7 +13972,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Most-active-attacking-players-in-World-Cup-2018">Most <em>active</em> attacking players in World Cup 2018<a class="anchor-link" href="#Most-active-attacking-players-in-World-Cup-2018">&#182;</a></h1><p>Who were the players who contributed the most to the attacking actions of their teams during World Cup 2018? How did they do it? How effective they were?</p>
-<p>To try to answer these questions I tried to run some simple analytics on the open data provided by Statsbomb.</p>
+<p>To try to answer these questions I tried to run some simple analytics on the open data provided by <a href="https://github.com/statsbomb/open-data">Statsbomb</a> <img src="https://github.com/achillemi/football-analytics/blob/main/img/statsbomb_logo.png?raw=true" height="18" width="18" />.</p>
 <h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">&#182;</a></h2><p>Football analytics is a very broad field nowadays and many metrics exist to estimate all kinds of different attributes for a player or a team. For the purpose of this small demo, however, I chose a very simple metric to quantify the contribution of players to their teams' efforts to score. I assumed that a very active player will touch the ball very often and, if he is a very active <strong>attacking</strong> player, then he will probably contribute with one or more passes immediately before a shot is taken by himself or by one of his teammates. Putting in mathematical terms, in any given match I define:</p>
 <ul>
 <li>$G$ as the total number of <strong>shots</strong> made by player $X$'s team during the match;</li>
@@ -13993,7 +13993,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The player $X$'s <strong>activeness</strong> can then be defined as:
-$$\alpha_{X} = \sum_{k=1}^{G}{p_{k}}$$</p>
+$$\alpha_{X} = \sum_{k=1}^{G}{p_{X}(k)}$$</p>
 
 </div>
 </div>
@@ -14334,7 +14334,7 @@ $$\alpha_{X} = \sum_{k=1}^{G}{p_{k}}$$</p>
 <p><img src="croatia_most_active_player.png" alt="Croatia most active attacking player![image.png](attachment:dc72cd2b-aa01-4d6f-b76b-12a400ef2865.png)" title="Croatia most active attacking player"></p>
 <p>And the following results for <strong>France</strong>:</p>
 <p><img src="france_most_active_player.png" alt="France most active attacking player" title="France most active attacking player"></p>
-<p>Not surprisingly, the most active attacking players are two of the most important strikers of their teams: Ivan Perišić and Antoine Griezmann.</p>
+<p>Not surprisingly, the most active attacking players are two of the most important strikers of their teams: <strong>Ivan Perišić</strong> and <strong>Antoine Griezmann</strong>.</p>
 
 </div>
 </div>
